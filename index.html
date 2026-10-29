@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>PAWFFICERS</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 1 : COVER -->
+<section class="page active" id="p1">
+  <div class="ging tl"></div><div class="ging br"></div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="pawsym" viewBox="0 0 100 100">
+    <ellipse cx="18" cy="46" rx="9.5" ry="13" transform="rotate(-24 18 46)"/>
+    <ellipse cx="38" cy="22" rx="10.5" ry="14" transform="rotate(-8 38 22)"/>
+    <ellipse cx="62" cy="22" rx="10.5" ry="14" transform="rotate(8 62 22)"/>
+    <ellipse cx="82" cy="46" rx="9.5" ry="13" transform="rotate(24 82 46)"/>
+    <path d="M50 48C66 48 80 64 82 76C84 90 66 92 50 86C34 92 16 90 18 76C20 64 34 48 50 48Z"/>
+  </symbol></defs></svg>
+  <div class="glass" id="glass">
+    <h1 class="title">PAWFFICERS</h1>
+    <button class="play" id="playBtn" aria-label="Play"></button>
+    <div class="by">by: eternityll0ve</div>
+  </div>
+  <svg class="paw" style="left:3vmin;top:4vmin;rotate:-22deg;animation-delay:0s"><use href="#pawsym"/></svg>
+  <svg class="paw" style="left:15vmin;top:2vmin;rotate:14deg;animation-delay:.5s"><use href="#pawsym"/></svg>
+  <svg class="paw" style="left:7vmin;top:16vmin;rotate:-8deg;animation-delay:1s"><use href="#pawsym"/></svg>
+  <svg class="paw" style="right:3vmin;bottom:21vmin;rotate:18deg;animation-delay:.3s"><use href="#pawsym"/></svg>
+  <svg class="paw" style="right:17vmin;bottom:8vmin;rotate:-14deg;animation-delay:.8s"><use href="#pawsym"/></svg>
+  <svg class="paw" style="right:4vmin;bottom:6vmin;rotate:10deg;animation-delay:1.3s"><use href="#pawsym"/></svg>
+</section>
+
+<!-- GAME -->
+<section class="page" id="p2">
+  <div class="hud" id="hud"><div class="bar"><i id="barFill"></i></div></div>
+</section>
+
+<!-- ENDING -->
+<section class="page" id="p3">
+  <div class="caption">Good night!</div>
+  <div class="stage3">
+    <div class="bedwrap" id="bedwrap"></div>
+  </div>
+  <button class="btn" id="replayBtn">PLAY AGAIN</button>
+</section>
+
+<div id="fx"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
